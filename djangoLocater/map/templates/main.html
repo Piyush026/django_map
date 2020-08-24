@@ -1,0 +1,16 @@
+{% extends "basic.html" %}
+{%block title%}
+main
+{%endblock%}
+
+{%block body%}
+{{obj}}
+<hr>
+<form action="" method="POST" autocomplete="off">
+    {%csrf_token%}
+    {{form.as_p}}
+    <button type="submit" class="btn btn-primary"> check</button>
+</form>
+
+
+{%endblock%}
